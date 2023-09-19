@@ -1,0 +1,101 @@
+.search_comp{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding-top: 48px;
+   gap: 20px;
+   .search_inp {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      border-radius: 5px;
+      background: #FFF;
+      box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+      padding: 18px 0 18px 32px;
+         input {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            color: #848484;
+            font-family: Nunito Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            background-color: white;
+            &::placeholder {
+               color: #848484;
+               font-family: Nunito Sans;
+               font-size: 14px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: 20px;
+            }
+         }
+   }
+   .filter_region{
+      position: relative;
+      width: 100%;
+      max-width: 200px;
+      z-index: 9999;
+      .filder_header {
+            width: 100%;
+            border-radius: 5px;
+            background: #FFF;
+            box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 24px;
+            cursor: pointer;
+            svg{
+               fill: #111517;
+            }
+            h3 {
+               color: #111517;
+               font-size: 14px;
+               font-weight: 400;
+            }
+      
+            svg {
+               line-height: 0;
+            }
+      }
+      ul{
+         display: none;
+         flex-direction: column;
+         gap: 8px;
+         position: absolute;
+         top: 65px;
+         list-style: none;
+         background-color: #FFF;
+         width: 100%;
+         padding: 16px 0 16px 24px ;
+         border-radius: 5px;
+         box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+         &.active{
+            display: flex;
+         }
+         li{
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+               transform: translateX(-12px);
+               background-color: #848484;
+               border-radius: 5px;
+               transition: 0.3s;
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width: 650px){
+   .search_comp{
+      .search_inp{
+         width: 100%;
+         max-width: 100%;
+      }
+   }
+}

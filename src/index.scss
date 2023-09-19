@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background: #FAFAFA;
+}
+#root {
+   font-family: 'Nunito Sans', sans-serif;
+   user-select: none;
+   position: relative;
+}
+.container {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+::-webkit-scrollbar{
+   display: none;
+}
+body.active {
+   background: #202C36;
+
+   #root {
+      background-color: #202C36;
+      button{
+         background: #2B3844;
+         box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+         color: white;
+      }
+      header {
+         background: #2B3844;
+         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+         .header_content {
+            .modes {
+               .light_mode {
+                  color: white;
+               }
+
+            }
+
+            h1 {
+               color: white;
+            }
+         }
+      }
+
+      .search_comp {
+         .search_inp {
+            border-radius: 5px;
+            background: #2B3844;
+            box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+
+            input {
+               color: white;
+               background-color: #2B3844;
+
+               &::placeholder {
+                  color: white;
+               }
+            }
+         }
+
+         .filter_region {
+            .filder_header {
+               border-radius: 5px;
+               background: #2B3844;
+               box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+               svg{
+                  fill: #FFF;
+               }
+               h3 {
+                  color: white;
+               }
+            }
+
+            ul {
+               border-radius: 5px;
+               background: #2B3844;
+               box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+
+               li {
+                  color: white;
+               }
+            }
+         }
+      }
+
+      .cards {
+         .card {
+            background: #2B3844;
+            box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+
+            img {
+               width: 100%;
+               height: 160px;
+            }
+
+            ul {
+               .country_name {
+                  color: #FFF;
+               }
+
+               li {
+                  list-style: none;
+                  color: #FFF;
+               }
+            }
+         }
+      }
+      .modal{
+         .modal_body{
+            background-color: #202C36;
+            svg{
+               fill: #FFF;
+            }
+            .country_modal_info{
+               .modal_country_name{
+                  color: white;
+               }
+               ul{
+                  li{
+                     color: white;
+                  }
+               }
+               .borders{
+                  p{
+                     color: white;
+                  }
+                  .borders_name{
+                     .border_name{
+                        border: 0px solid #979797;
+                        background: #2B3844;
+                        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+                        color: white;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+}
